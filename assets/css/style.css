@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, hsl(300, 69%, 71%), hsl(257, 40%, 49%)), url("/assets/images/bg-desktop.svg");
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.main-wrapper {
+    background-image: url("/assets/images/bg-desktop.svg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-flex {
+    width: 100%;
+    display: flex;
+}
+
+.left-wrapper {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-wrapper img {
+    width: 100%;
+}
+
+.right-wrapper {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-wrapper__title {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 3em;
+    margin-top: 30px;
+}
+
+.right-wrapper__p {
+    margin: 40px 0 40px 0;
+}
+
+.right-wrapper__button {
+    width: 250px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: 400;
+    border: none;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.443);
+}
+
+.right-wrapper__button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.wrapper__social-icon {
+    width: 100%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    padding: 40px;
+}
+
+ion-icon {
+    font-size: 32px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid white;
+}
+
+ion-icon:hover {
+    color: hsl(300, 71%, 60%);
+    border: 3px solid hsl(300, 71%, 60%);
+}
+
+@media (max-width: 1440px) {
+    body {
+        height: 100%;
+        background: linear-gradient(180deg, hsl(300, 69%, 71%), hsl(257, 40%, 49%)), url("/assets/images/bg-desktop.svg");
+    }
+    
+    .main-wrapper {
+        background-image: url("/assets/images/bg-mobile.svg");
+        background-size: cover;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+
+    .left-wrapper {
+        padding: 0px;
+        margin: 50px 0;
+    }
+
+    .left-wrapper img{
+        width: 80%;
+    }
+    
+    .right-wrapper {
+        text-align: center;
+        align-items: center;
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    .right-wrapper__title {
+        padding: 0 50px;
+        font-size: 2em;
+    }
+
+    .right-wrapper__p {
+        padding: 0 40px;
+    }
+
+    .right-wrapper__button {
+        width: 350px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .wrapper__social-icon {
+        padding-right: 0px;
+        justify-content: center;
+    }
+}
